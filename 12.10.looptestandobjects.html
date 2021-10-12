@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <script>
+
+        //var n, k = 0, str = "";
+       // n = +prompt("Введите #"); //задание 1
+       // while (n > 0) {
+       //     str += "#";
+      //      n--;
+      //      alert(str)
+      //  }
+      //  str = 0;
+
+      //  n = +prompt("Введите число"); //задание 2
+       // while (k < n) {
+       //     n--;
+      //      alert(k + " ");
+
+
+       // }
+
+      // do {
+      // k = prompt("впешите ответ на пример 2+2*2",0);
+      // if 
+      // alert ()
+       // } while (k!=6);
+
+    var rect = {
+        x1 : 1,
+        y1 : 5,
+        x2 : 6,
+        y2 : 2
+    };
+    var str = "";
+
+    function objProperties(givenObject) {
+        for (var tempPorety in rect)
+            str += tempPorety + "+" + givenObject[tempPorety] + "\n";
+            alert(str);
+    }
+    objProperties(rect);
+
+
+    function rectSizes(givenRect){
+        alert("Ширина прямоугольника = " + (givenRect.x2 - givenRect.x1) + "\nВысота прямоугольника = " + (givenRect.y1 - givenRect.y2));
+    }
+    rectSizes(rect);
+    </script>
+
+</body>
+
+</html>
